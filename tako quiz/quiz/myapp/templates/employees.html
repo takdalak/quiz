@@ -1,0 +1,9 @@
+{% block content %}
+<h1>Employees</h1>
+{% for employee in employees %}
+<p><b>{{employee.id}}</b></p>
+<p>full name - <b>{{ employee.name }} {{ employee.surname }}</b></p>
+<p>stack - <b>{{ employee.stack }}</b></p>
+<p>team leader - <b>{{employee.team_lead}}</b></p>
+<hr />
+{% endfor %} {% endblock %}

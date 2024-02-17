@@ -1,0 +1,11 @@
+{% block content %}
+<h1>Stacks and Users</h1>
+{% for stack in stacks %}
+<h3>{{ stack.stack }}</h3>
+<ul>
+  {% for user in stack.users %}
+  <li>{{ user.name }} {{ user.surname }}</li>
+  {% endfor %}
+</ul>
+<hr />
+{% endfor %} {% endblock %}

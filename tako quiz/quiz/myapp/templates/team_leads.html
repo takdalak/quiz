@@ -1,0 +1,11 @@
+{% block content %}
+<h1>Team Leads</h1>
+{% for team_lead in team_leads %}
+<h3>{{ team_lead.name }}</h3>
+<ul>
+  {% for user in team_lead.users %}
+  <li>{{ user.name }} {{ user.surname }}</li>
+  {% endfor %}
+</ul>
+<hr />
+{% endfor %} {% endblock %}
